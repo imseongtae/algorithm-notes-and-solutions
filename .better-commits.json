@@ -1,0 +1,182 @@
+{
+  "check_status": true,
+  "commit_type": {
+    "enable": true,
+    "initial_value": "(feat)",
+    "infer_type_from_branch": true,
+    "append_emoji_to_label": true,
+    "append_emoji_to_commit": true,
+    "options": [
+      {
+        "value": "(feat)",
+        "label": "feat",
+        "hint": "새로운 기능 추가",
+        "emoji": "✨"
+      },
+      {
+        "value": "(ui)",
+        "label": "ui",
+        "hint": "UI 및 스타일 파일 추가/수정, 문구 추가/수정",
+        "emoji": "💄"
+      },
+      {
+        "value": "(api)",
+        "label": "api",
+        "hint": "API 추가/수정",
+        "emoji": "👽️"
+      },
+      {
+        "value": "(ux)",
+        "label": "ux",
+        "hint": "사용자 경험 및 사용성 개선",
+        "emoji": "🚸"
+      },
+      {
+        "value": "(test)",
+        "label": "test",
+        "hint": "테스트 코드, 리팩토링 테스트 코드 관련 [코드 변경 없음]",
+        "emoji": "✅"
+      },
+      {
+        "value": "(tweak)",
+        "label": "tweak",
+        "hint": "코드 수정 - UI 및 스타일 관련 없는 수정",
+        "emoji": "🩹"
+      },
+      {
+        "value": "(refactor)",
+        "label": "refactor",
+        "hint": "코드 리팩토링 - 기존 코드의 기능을 변경하지 않으면서 코드의 구조, 설계, 구현 방식 개선",
+        "emoji": "♻️"
+      },
+      {
+        "value": "(fix)",
+        "label": "fix",
+        "hint": "버그 수정",
+        "emoji": "🐛"
+      },
+      {
+        "value": "(move)",
+        "label": "move",
+        "hint": "리소스(예: 파일, 경로, 라우트)를 이동하거나 이름을 변경",
+        "emoji": "🚚"
+      },
+      {
+        "value": "(remove)",
+        "label": "remove",
+        "hint": "코드 및 파일 삭제",
+        "emoji": "🔥"
+      },
+      {
+        "value": "(chore)",
+        "label": "chore",
+        "hint": "빌드 업무 수정, 패키지 매니저 수정 등 구성 파일 추가/수정 [코드 변경 없음]",
+        "emoji": "🔧"
+      },
+      {
+        "value": "(style)",
+        "label": "style",
+        "hint": "코드 포맷 변경, 세미 콜론 누락 등의 서식 수정 [코드 변경 없음]",
+        "emoji": "🎨"
+      },
+      {
+        "value": "(docs)",
+        "label": "docs",
+        "hint": "문서 추가/수정",
+        "emoji": "📝"
+      },
+      {
+        "value": "(solve)",
+        "label": "solve",
+        "hint": "문제 풀이",
+        "emoji": "👾"
+      }
+    ]
+  },
+  "commit_scope": {
+    "enable": false,
+    "custom_scope": false,
+    "initial_value": "",
+    "options": [
+      {
+        "value": "",
+        "label": "none"
+      },
+      {
+        "value": "app",
+        "label": "app"
+      },
+      {
+        "value": "shared",
+        "label": "shared"
+      },
+      {
+        "value": "server",
+        "label": "server"
+      },
+      {
+        "value": "tools",
+        "label": "tools"
+      }
+    ]
+  },
+  "check_ticket": {
+    "infer_ticket": true,
+    "confirm_ticket": false,
+    "add_to_title": true,
+    "append_hashtag": false,
+    "surround": "",
+    "title_position": "start"
+  },
+  "commit_title": {
+    "max_size": 70
+  },
+  "commit_body": {
+    "enable": true,
+    "required": false
+  },
+  "commit_footer": {
+    "enable": false,
+    "initial_value": [],
+    "options": ["closes", "trailer", "breaking-change", "deprecated", "custom"]
+  },
+  "breaking_change": {
+    "add_exclamation_to_title": true
+  },
+  "confirm_commit": true,
+  "confirm_with_editor": false,
+  "print_commit_output": true,
+  "branch_pre_commands": [],
+  "branch_post_commands": [],
+  "worktree_pre_commands": [],
+  "worktree_post_commands": [],
+  "branch_user": {
+    "enable": true,
+    "required": false,
+    "separator": "/"
+  },
+  "branch_type": {
+    "enable": false,
+    "separator": "/"
+  },
+  "branch_version": {
+    "enable": false,
+    "required": false,
+    "separator": "/"
+  },
+  "branch_ticket": {
+    "enable": false,
+    "required": false,
+    "separator": "-"
+  },
+  "branch_description": {
+    "max_length": 70,
+    "separator": ""
+  },
+  "branch_action_default": "branch",
+  "branch_order": ["user", "version", "type", "ticket", "description"],
+  "enable_worktrees": true,
+  "overrides": {
+    "shell": "/bin/sh"
+  }
+}

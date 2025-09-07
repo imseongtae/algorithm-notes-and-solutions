@@ -1,0 +1,17 @@
+{
+  // 저장 시 포맷
+  "editor.formatOnSave": true,
+
+  // 기본 포매터를 Biome으로 고정
+  "editor.defaultFormatter": "biomejs.biome",
+  "[typescript]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[javascript]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[markdown]": { "editor.defaultFormatter": "biomejs.biome" },
+
+  // 저장 시 Biome의 모든 수정 실행(권장)
+  // VS Code 최신 버전은 "explicit" 지정 권장
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  }
+}
