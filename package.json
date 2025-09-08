@@ -4,10 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "=== Markdown ===": "",
     "lint:md": "markdownlint-cli2",
-    "fix:md": "markdownlint-cli2 --fix"
+    "fix:md": "markdownlint-cli2 --fix",
+
+    "=== Solve Runner ===": "",
+    "solve": "node scripts/solve.mjs",
+    "solve:leet": "node scripts/solve.mjs leet",
+    "solve:pg": "node scripts/solve.mjs pg",
+
+    "=== Dev (sample default) ===": "",
+    "dev": "node -r ts-node/register -r tsconfig-paths/register platforms/leetcode/0121-best-time-to-buy-and-sell-stock/index.ts",
+
+    "=== Type Check ===": "",
+    "typecheck": "tsc --noEmit",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +30,7 @@
     "@types/node": "^24.3.1",
     "markdownlint-cli2": "^0.18.1",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.9.2"
   }
 }
