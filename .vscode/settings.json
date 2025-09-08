@@ -6,7 +6,16 @@
   "editor.defaultFormatter": "biomejs.biome",
   "[typescript]": { "editor.defaultFormatter": "biomejs.biome" },
   "[javascript]": { "editor.defaultFormatter": "biomejs.biome" },
-  "[markdown]": { "editor.defaultFormatter": "biomejs.biome" },
+  // "[markdown]": { "editor.defaultFormatter": "biomejs.biome" },
+  
+  // Markdown은 Prettier
+  "[markdown]": {
+    // 저장/붙여넣기 때 포맷팅(=markdownlint가 제공하는 fix를 포매터로 실행)
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
 
   // 저장 시 Biome의 모든 수정 실행(권장)
   // VS Code 최신 버전은 "explicit" 지정 권장

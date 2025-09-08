@@ -1,0 +1,9 @@
+{
+  // Centralized include/exclude globs for markdownlint-cli2
+  "globs": [
+    "**/*.md",
+    "!**/node_modules/**",
+    "!**/dist/**",
+    "!**/coverage/**"
+  ]
+}
