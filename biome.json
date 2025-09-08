@@ -6,8 +6,15 @@
     "useIgnoreFile": true
   },
   "files": {
-    "include": ["src/**/*.{ts,js}", "**/*.test.{ts,js}", "**/*.md", "**/*.json", "**/*.jsonc"],
-    "ignore": ["dist/**", "coverage/**", "node_modules/**"],
+    "includes": [
+      "libs/**/*.{ts,js}",
+      "platforms/**/*.{ts,js}",
+      "test-utils/**/*.{ts,js}",
+      "**/*.test.{ts,js}",
+      "**/*.md",
+      "**/*.json",
+      "**/*.jsonc"
+    ],
     "ignoreUnknown": true
   },
   "formatter": {
@@ -26,6 +33,5 @@
   "linter": {
     "enabled": true,
     "rules": { "recommended": true }
-  },
-  "organizeImports": { "enabled": true }
+  }
 }
